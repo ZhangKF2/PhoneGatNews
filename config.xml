@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.phonegap.news" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>PhoneGapNews</name>
+    <name>iBear News</name>
     <description>
-        A blank PhoneGap app.
+        A News app.
     </description>
     <author email="support@phonegap.com" href="http://phonegap.com">
         PhoneGap Team

@@ -1,0 +1,201 @@
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+@font-face{
+    font-family: kaiti;
+    src:url('../ttf/simkai.ttf');
+}
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    
+    /* background-color:#E4E4E4;
+    background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%); 
+    background-image:-ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%); 
+    background-image:-webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #A7A7A7),
+        color-stop(0.51, #E4E4E4)
+    );  */
+    background-attachment:fixed;
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size:12px;
+    height:100vh;
+    margin:0px;
+    padding:0px;
+    text-transform:uppercase;
+    width:100%;
+}
+
+input
+{
+    outline:none;
+}
+
+button
+{
+    outline:none;
+}
+
+
+.top-banner
+{
+    position:fixed;
+    top:0;
+    background-color:rgb(238, 15, 15);
+
+    height:40px;
+    width:100vw;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-banner input
+{
+    border-radius: 10px;
+    background-color:rgba(253, 120, 110,0.8);
+    border-color:rgb(238, 15, 15);
+    border:none;
+    height:26px;
+
+    text-align: center;
+    font-size:12px;
+}
+
+.top-banner input:focus
+{
+   border-color:rgb(238, 15, 15);
+   background-color:white;
+   color:black;
+}
+
+/* 标题：Label无法垂直居中 */
+.top-banner div
+{
+    margin-left:5px;
+    margin-right:5px;
+    font-size:15px;
+    font-family: kaiti;
+    /* background-color:black; */
+    height:20px;
+    color:white;
+}
+
+.top-banner button
+{
+    margin-left:2px;
+    margin-right:2px;
+    background-color:transparent;
+    color:white;
+    border:none;
+}
+
+/*搜索图标*/
+.top-banner button > span
+{
+    font-size:10pt;
+    margin-right: 2px;
+}
+
+.main
+{
+    padding-top:45px;
+    color:black;
+}
+
+.main>div:nth-child(1)
+{
+    width:100vw;
+    overflow-y: auto;
+}
+
+#divNewsCatalog
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    height:25px;
+    width:10000px;
+
+    padding-left:2vw;
+
+    background-color:white;
+}
+
+/* 标题元素 */
+#divNewsCatalog > div
+{
+    width:12vw;
+    color:#555;
+    height:25px;
+    background-color:white;
+}
+
+/* 遮罩 */
+#divNewsCatalog>div:nth-last-child(2)
+{
+    width:10vw;
+
+    position: fixed;
+    left:85vw;
+
+    background-image: linear-gradient(left,rgba(255,255,255,0), rgba(255,255,255,100));
+    background-image: -webkit-linear-gradient(left,rgba(255,255,255,0), rgba(255,255,255,100));
+    z-index: 100;
+}
+
+/* 菜单 */
+#divNewsCatalog>div:nth-last-child(1)
+{
+    position: fixed;
+    left:95vw;
+
+    width:5vw;
+    margin-right:2vw;
+
+    z-index: 101;
+
+    background-color:white;
+}
+
+/*************welcome.html**********************/
+.welcome-body
+{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom:10vh;
+
+    /* background-image:linear-gradient(top, white 0%, #e02525 51%);
+    background-image:-webkit-linear-gradient(top, white 0%, #e02525 51%);
+    background-image:-webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, white),
+        color-stop(0.51, #e02525)
+    );  */
+
+    background-color:white;
+    height: 100vh;
+}
+
+.welcome-body > .main span
+{
+    color:red;
+    font-size:6vw;
+    font-family: kaiti;
+}
+
